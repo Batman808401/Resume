@@ -1,4 +1,4 @@
-﻿body {
+body {
     background-color: black;
     margin: 0;
     padding: 0;
@@ -15,6 +15,20 @@
 #content {
     padding: 10px;
     border: 2px solid white;
+    transition: transform .5s linear 0s;
+    position: relative;
+}
+
+#front {
+}
+
+#back {
+    display: none;
+    transform: rotateY(180deg);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 #contentHead {
@@ -24,6 +38,13 @@
 
 #contentBody {
     padding-top: 10px;
+}
+
+#backBtn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0;
 }
 
 .repos {
@@ -44,4 +65,30 @@
 .text {
     font-family: sans-serif;
     color: white;
+}
+
+.btn {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px;
+    transition: background-color .1s linear 0s, color .2s linear 0s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black
+}
+
+.backContent {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
 }
