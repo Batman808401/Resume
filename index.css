@@ -2,6 +2,8 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
+    background-image: url(images/bg.jpeg);
+    background-size: cover;
 }
 
 #container {
@@ -14,7 +16,7 @@ body {
 
 #content {
     padding: 10px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     transition: transform .5s linear 0s;
     position: relative;
 }
@@ -29,6 +31,13 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+#links {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 10px;
 }
 
 #contentHead {
@@ -57,10 +66,10 @@ body {
     transition: background-color .15s ease-out 0s, color .15s ease-out 0s;
 }
 
-.repos:hover {
-    background-color: white;
-    color: black;
-}
+    .repos:hover {
+        background-color: rgba(255,255,255,.4);
+        color: black;
+    }
 
 .text {
     font-family: sans-serif;
@@ -70,7 +79,7 @@ body {
 .btn {
     padding: 10px;
     display: inline-block;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     color: white;
     font-family: sans-serif;
     cursor: pointer;
@@ -80,7 +89,7 @@ body {
 }
 
 .btn:hover {
-    background-color: white;
+    background-color: rgba(255,255,255,.4);
     color: black
 }
 
