@@ -1,3 +1,8 @@
+window.addEventListener('load', function () {
+    var load_screen = document.getElementById('loadingParent');
+    document.body.removeChild(load_screen);
+});
+
 var content = document.getElementById('content');
 var front = document.getElementById('front');
 var back = document.getElementById('back');
