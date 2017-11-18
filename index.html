@@ -7,70 +7,77 @@
     <link type="text/css" rel="stylesheet" href="index.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/profile.png" />
 </head>
-<body>
+<body style="background-image: url(images/bg.jpeg);">
     <div id="container">
-        <div id="content">
-            <div id="front">
-                <div id="contentHead">
-                    <img src="images/profile.png" alt="Batman808401 profile picture" id="profilePic" height="100" width="100" />
-                    <span class="text" style="padding-left: 10px; font-size: 48px">Edgardo <br /> Velazquez</span>
+        <div id="verticalContent">
+            <div id="content">
+                <div id="front">
+                    <div id="contentHead">
+                        <img src="images/profile.png" alt="Batman808401 profile picture" id ="profilePic" height="100" width="100" />
+                        <span class="text" style="padding-left: 10px; font-size: 48px"> Edgardo <br /> Velazquez</span>
+                    </div>
+                    <div id="contentBody">
+                        <span class="text" style="font-size: 18px">My repositories:</span>
+                        <div class="repos" onclick="flip('P90')">
+                            P90-THREEjs
+                        </div>
+                        <div class="repos" onclick="flip('cGame')">
+                            Basic canvas game
+                        </div>
+                        <div class="repos" onclick="flip('meteors')">
+                            Meteors-THREEjs
+                        </div>
+                        <div class="repos" onclick="flip('rcs')">
+                            RCS
+                        </div>
+                    </div>
                 </div>
-                <div id="contentBody">
-                    <span class="text" style="font-size: 18px">My repositories:</span>
-                    <div class="repos" onclick="flip('P90')">
-                        P90-THREEjs
+                <div id="back">
+                    <div id="backBtn" class="btn" onclick="flip()">
+                        Back
                     </div>
-                    <div class="repos" onclick="flip('cGame')">
-                        Basic canvas game
+                    <div id="P90" class="backContent" style="display: none">
+                        Learn how to export from blender to THREEjs with textures and   display them on a canvas! I used a model of a P90 from a friend as    an example.
+                        <a href="https://github.com/Batman808401/P90-THREEjs" target="  _blank">
+                            <br /><div class="btn">
+                                Go to repository
+                            </div>
+                        </a>
                     </div>
-                    <div class="repos" onclick="flip('meteors')">
-                        Meteors-THREEjs
+                    <div id="cGame" class="backContent" style="display: none">
+                        My very first creation in JavaScript. This is a basic game where    you have to dodge a ball as it bounces around the canvas.
+                        <a href="https://github.com/Batman808401/Basic-canvas-game" target= "_blank">
+                            <br /><div class="btn">
+                                Go to repository
+                            </div>
+                        </a>
                     </div>
-                    <div class="repos" onclick="flip('rcs')">
-                        RCS
+                    <div id="meteors" class="backContent" style="display: none">
+                        This is a game I've modified from the 2D version of meteors made    by Will Whiteneck. I gave it a 3D twist with a ship, skybox, and   more.
+                        <a href="https://github.com/Batman808401/Meteors-THREEjs" target="  _blank">
+                            <br /><div class="btn">
+                                Go to repository
+                            </div>
+                        </a>
                     </div>
+                    <div id="rcs" class="backContent" style="display: none">
+                        I use this repository to host all of the styling and rules for my   plug.dj community. Check out the browser plugin.
+                        <a href="https://github.com/Batman808401/rcs" target="_blank">
+                            <br /><div class="btn">
+                                Go to repository
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--<div id="links">
+                    <img src="images/plug.jpg" width="50" height="50" alt="plug.dj" />
+                </div>-->
+            </div>
+            <div id="newsContainer">
+                <div id="newsBox">
+                    <a href="./aboutMe.html">Comp Sci</a>
                 </div>
             </div>
-            <div id="back">
-                <div id="backBtn" class="btn" onclick="flip()">
-                    Back
-                </div>
-                <div id="P90" class="backContent" style="display: none">
-                    Learn how to export from blender to THREEjs with textures and display them on a canvas! I used a model of a P90 from a friend as an example.
-                    <a href="https://github.com/Batman808401/P90-THREEjs" target="_blank">
-                        <br /><div class="btn">
-                            Go to repository
-                        </div>
-                    </a>
-                </div>
-                <div id="cGame" class="backContent" style="display: none">
-                    My very first creation in JavaScript. This is a basic game where you have to dodge a ball as it bounces around the canvas.
-                    <a href="https://github.com/Batman808401/Basic-canvas-game" target="_blank">
-                        <br /><div class="btn">
-                            Go to repository
-                        </div>
-                    </a>
-                </div>
-                <div id="meteors" class="backContent" style="display: none">
-                    This is a game I've modified from the 2D version of meteors made by Will Whiteneck. I gave it a 3D twist with a ship, skybox, and more.
-                    <a href="https://github.com/Batman808401/Meteors-THREEjs" target="_blank">
-                        <br /><div class="btn">
-                            Go to repository
-                        </div>
-                    </a>
-                </div>
-                <div id="rcs" class="backContent" style="display: none">
-                    I use this repository to host all of the styling and rules for my plug.dj community. Check out the browser plugin.
-                    <a href="https://github.com/Batman808401/rcs" target="_blank">
-                        <br /><div class="btn">
-                            Go to repository
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!--<div id="links">
-                <img src="images/plug.jpg" width="50" height="50" alt="plug.dj" />
-            </div>-->
         </div>
     </div>
     <div id="loadingParent">
