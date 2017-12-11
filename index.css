@@ -36,6 +36,18 @@ a {
     height: 100vh;
     width: 100vw;
 }
+#container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: auto;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    transition: opacity .2s linear 0s;
+    user-select: none;
+}
 
 #content {
     padding: 10px;
