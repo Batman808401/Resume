@@ -1,0 +1,34 @@
+#aboutMeTitle {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 4vw;
+	text-align: center;
+}
+
+#aboutMeContent {
+	color: white;
+	font-family: sans-serif;
+	max-width: 1000px;
+	padding: 10px;
+	font-size: 2vw;
+	text-align: center;
+	transition: opacity .1s linear 0s;
+}
+
+#showBgParent {
+	position: relative;
+	padding: auto;
+}
+#showBgChild {
+	position: relative;
+	padding: 10px;
+	font-size: 1vw;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#showBg {
+	padding: 5px;
+	background-color: lime;
+}
