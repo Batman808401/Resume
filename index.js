@@ -1,5 +1,6 @@
 window.addEventListener('load', function () {
     var load_screen = document.getElementById('loadingParent');
+    var container = document.getElementById('container');
     document.body.removeChild(load_screen);
 });
 
